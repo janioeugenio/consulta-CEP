@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<!--Titulo do site-->
+		<title>Mochila</title>
+
+		<!--Importação de CSS-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+	</head>
+
+<body>
+
+    <header class="cabecalho">
+        <label class="label-cabecalho">Consultar CEP</label>
+    </header>
+
+    <div class="corpo">
+
+        <div class="End-para-CEP">
+            <section class="cosulta-CEP">
+                <!--Formuário para descobrir o CEP a partir do endereço-->
+                <form class="formulario" data-formulario>
+
+                    <label for="uf">Estado</label>
+                    <input type="text" name="uf"  data-uf value="">
+
+                    <label for="localidade">Cidade</label>
+                    <input type="text" name="localidade" data-localidade value="">
+
+                    <label for="logradouro">Nome da rua</label>
+                    <input type="text" name="logradouro"  data-logradouro value="">
+
+                    <label for="select-bairros">Bairro</label>
+                    <select name="select-bairros" data-select-bairros>
+                        <option value="Selecionar Bairro">Selecionar Bairro</option>
+                    </select>
+                </form>
+
+            <section class="resultado">
+                <label class="label-resultado" data-resultado></label>
+            </section>   
+        </div> 
+
+        <div class="CEP-para-end">
+            <section class="cosulta-END">
+                <!--A parte do action jora para a pagina, caso aprovado-->
+                <form class="formulario" data-formulario>
+
+                    <label for="cep">cep</label>
+                    <input type="text" name="cep"  data-cep value="">
+
+                    <label value="Estado" data-estado></label>
+                    
+                    <label value="Cidade" data-cidade></label>
+
+                    <label value="bairro" data-bairro></label>
+
+                    <label value="rua" data-rua ></label>
+
+                    <label value="End-completo" data-End-completo ></label>
+
+                    
+                </form>
+
+            <section class="resultado">
+                <label class="label-resultado" data-resultado></label>
+            </section>   
+        </div> 
+    </div>
+    <!--Importação do Javascript-->
+	<script type="text/javascript" src="js/EndParaCEP.js"></script>
+    <script type="text/javascript" src="js/CEPParaEnd.js"></script>
+
+</body>
+<footer class="rodape">
+    <p>Feito por <a>Jânio Eugênio</a></p>
+</footer>
+
+</html>
